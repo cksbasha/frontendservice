@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: reddies
-        image: gcr.io/augmented-ward-329505/reddy:null.8
+        image: gcr.io/augmented-ward-329505/reddy:null.9
         resources:
           limits:
             memory: "128Mi"
