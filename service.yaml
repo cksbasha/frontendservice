@@ -30,7 +30,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: frontend
+          image: gcr.io/augmented-ward-329505/reddy:null.11
           ports:
           - containerPort: 8080
           readinessProbe:
