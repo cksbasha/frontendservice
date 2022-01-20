@@ -48,7 +48,6 @@ spec:
         container('golang') {
           sh """
             ln -s `pwd` 
-            go test
           """
         }
       }
