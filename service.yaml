@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: gcr.io/my-project-600-339318/frontend:null.9
+          image: gcr.io/my-project-600-339318/frontend:null.10
           ports:
           - containerPort: 8080
           readinessProbe:
