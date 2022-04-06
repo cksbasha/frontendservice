@@ -63,7 +63,7 @@ spec:
       steps {
         container('kubectl') {
           sh "gcloud container clusters get-credentials peddarayudu --zone us-east4-b	 --project my-project-600-339318"
-          sh "kubectl apply -help"
+          sh "kubectl apply -f service.yaml "
           
         }
       }
