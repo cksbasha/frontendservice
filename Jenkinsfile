@@ -5,7 +5,7 @@ pipeline {
     APP_NAME = "frontend"
     FE_SVC_NAME = "${APP_NAME}-frontend"
     CLUSTER = "way2die"
-    CLUSTER_ZONE = "us-central1-c"
+    CLUSTER_ZONE = "us-east4-b"
     IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}:${env.BRANCH_NAME}.${env.BUILD_NUMBER}"
     JENKINS_CRED = "${PROJECT}"
   }
@@ -62,7 +62,7 @@ spec:
     stage('Deploy Dev') {
       steps {
         container('kubectl') {
-          sh "gcloud container clusters get-credentials peddarayudu --zone us-central1-c --project my-project-600-339318"
+          sh "gcloud container clusters get-credentials peddarayudu --zone us-east4-b	 --project my-project-600-339318"
           sh "kubectl apply -help"
           
         }
